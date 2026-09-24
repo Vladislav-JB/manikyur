@@ -71,19 +71,19 @@
   @media (max-width: 860px) { .bar.is-scrolled { background: rgb(247 242 238 / .95); } }
 
   /* ---- 1 · первый экран: рука слева, текст в светлом поле справа ----------------- */
-  .hero__back img { position: absolute; max-width: none; width: 112%; height: 112%; left: -6%; top: -6%; object-fit: cover; object-position: 30% 50%; }
+  .hero__back img { position: absolute; max-width: none; width: 124%; height: 112%; left: -24%; top: -6%; object-fit: cover; object-position: 30% 50%; } /* кадр сдвинут влево: пальцы не заходят под текст */
   .hero__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
     background: linear-gradient(to left, rgb(247 242 238 / .9) 0%, rgb(247 242 238 / .55) 38%, transparent 62%); }
   .hero__floor { position: absolute; inset: auto 0 0 0; height: 22%; z-index: 2; pointer-events: none;
     background: linear-gradient(to top, var(--v-canvas) 0%, rgb(247 242 238 / .5) 45%, transparent 100%); }
-  .hero__copy { right: var(--v-gutter); bottom: clamp(4.5rem, 13vh, 8.5rem); width: min(40rem, 46vw); }
+  .hero__copy { right: var(--v-gutter); bottom: clamp(4.5rem, 13vh, 8.5rem); width: min(38rem, 44vw); }
   .hero__label { display: block; margin-bottom: var(--v-4); color: var(--v-accent); }
   .hero__copy .v-display { font-size: clamp(2.6rem, 1.2rem + 3.4vw, 4.6rem); }
   .hero__copy .v-lede { margin-top: var(--v-5); max-width: 36ch; }
   .hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); margin-top: var(--v-6); }
   .hero__tel { text-decoration: none; color: var(--v-ink); font-size: var(--v-t-sm); display: inline-flex; align-items: center; min-height: 44px; gap: .35em; }
   .hero__tel b { font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; }
-  .hero__seal { position: absolute; z-index: 3; left: clamp(1.5rem, 5vw, 5rem); top: clamp(6rem, 16vh, 10rem); width: 8.5rem; aspect-ratio: 1; border-radius: 50%;
+  .hero__seal { position: absolute; z-index: 3; right: clamp(2rem, 8vw, 9rem); top: clamp(6rem, 14vh, 9rem); width: 8.5rem; aspect-ratio: 1; border-radius: 50%;
     display: grid; place-content: center; text-align: center; gap: .1rem; color: var(--v-accent); background: rgb(255 251 248 / .72);
     -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); box-shadow: inset 0 0 0 1.5px var(--v-accent), var(--v-e1); transform: rotate(-8deg); }
   .hero__seal b { font-family: var(--v-font-display); font-size: 2.6rem; line-height: .9; font-weight: 600; }
