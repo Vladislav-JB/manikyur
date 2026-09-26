@@ -91,14 +91,14 @@
   .hero__seal span { font-size: .72rem; letter-spacing: var(--v-track-wide); text-transform: uppercase; font-weight: 600; line-height: 1.3; }
   @media (max-height: 760px) and (min-width: 861px) { .hero__copy .v-display { font-size: var(--v-t-2xl); } .hero__copy { bottom: clamp(3rem, 9vh, 5rem); } .hero__seal { right: auto; left: clamp(1.5rem, 4vw, 4rem); top: auto; bottom: clamp(3rem, 9vh, 5rem); width: 7rem; } }
   @media (max-width: 860px) {
-    .hero__back img { object-position: 30% 40%; }
+    .hero__back img { width: 100%; left: 0; object-position: 50% 0%; } /* мобильный кадр: рука целиком в верхней части */
     .hero__scrim { background: linear-gradient(to top, rgb(247 242 238 / .97) 0%, rgb(247 242 238 / .9) 42%, rgb(247 242 238 / .2) 62%, transparent 75%); }
     .hero__floor { height: 10%; }
     .hero__copy { left: var(--v-gutter); right: var(--v-gutter); width: auto; bottom: calc(1.5rem + env(safe-area-inset-bottom)); }
     .hero__copy .v-display { font-size: var(--v-t-2xl); }
     .hero__copy .v-lede { font-size: var(--v-t-base); margin-top: var(--v-3); }
     .hero__cta { margin-top: var(--v-4); }
-    .hero__seal { left: auto; right: var(--v-gutter); top: 5.5rem; width: 6.5rem; }
+    .hero__seal { left: auto; right: var(--v-gutter); top: 27vh; width: 6.5rem; } /* правее кончиков пальцев, не закрывает ноготь */
     .hero__seal b { font-size: 2rem; }
     .hero__seal span { font-size: .62rem; }
   }
@@ -547,7 +547,6 @@
         </div>
         <footer class="foot">
           <span>Студия маникюра «Лунка»</span>
-          <span>ИП Орлова Е. А. · ИНН 770000000000</span>
           <span class="foot__more">Фото: <a href="https://unsplash.com/license" target="_blank" rel="noopener">Unsplash</a></span>
         </footer>
       </div>
